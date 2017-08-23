@@ -77,7 +77,7 @@
 		scope=2;
 		displayName="Platoon Commander";
 		uniformClass="fow_u_uk_parasmock";
-		backpack="TWC_Backpack_WW2_SL";
+		backpack="TWC_Backpack_WW2Para_Base";
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -140,7 +140,7 @@
 		scope=2;
 		displayName="Platoon Sergeant";
 		uniformClass="fow_u_uk_parasmock";
-		backpack="TWC_Backpack_WW2_Sergeant";
+		backpack="TWC_Backpack_WW2Para_Sergeant";
 		weapons[]=
 		{
 			"Throw",
@@ -257,7 +257,7 @@
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_parasmock";
-		backpack="TWC_Backpack_WW2_SL";
+		backpack="TWC_Backpack_WW2Para_SL";
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -330,6 +330,7 @@
 		scope=2;
 		displayName="Rifleman";
 		uniformClass="fow_u_uk_parasmock";
+		backpack="TWC_Backpack_WW2Para_Base"
 		weapons[]=
 		{
 			"Throw",
@@ -391,7 +392,7 @@
 	{
 		displayName="2IC";
 		uniformClass="fow_u_uk_parasmock";
-		backpack="TWC_Backpack_WW2_2IC";
+		backpack="TWC_Backpack_WW2Para_2IC";
 		weapons[]=
 		{
 			"Throw",
@@ -411,6 +412,7 @@
 		displayName="Machine Gunner";
 		icon="iconManMG";
 		uniformClass="fow_u_uk_parasmock";
+		backpack="TWC_Backpack_WW2Para_MGASS"
 		linkedItems[]=
 		{
         "TWC_Vest_WW2_Para_Bren",
@@ -461,7 +463,7 @@
 	class WW2_Para_British_MGASS: WW2_Para_British_Rifleman
 	{
 		displayName="Machine Gunner Assistant";
-		backpack="TWC_Backpack_WW2_MGASS";
+		backpack="TWC_Backpack_WW2Para_MGASS";
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Para_Bren",
