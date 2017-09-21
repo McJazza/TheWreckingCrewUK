@@ -7,6 +7,7 @@ class CfgFunctions {
 			class AttackHelicopter{};
 			class AttackPlane {};
 			class BattlefieldSounds {};
+			class briefingLoadout {};
 			class CommandMessage{};
 			class createMarker{};
 			class CreateTask{};
