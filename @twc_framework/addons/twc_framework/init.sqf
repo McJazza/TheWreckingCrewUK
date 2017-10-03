@@ -74,8 +74,9 @@ player addEventHandler ["Killed",{
 }];
 
 */
-if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {systemChat "twcModuleEnabled was Nil"};
+["twc_evh_fnc_setSpectator", { [(_this select 0)] call twc_fnc_toggleSpectator; }] call CBA_fnc_addEventHandler;
 
+if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {systemChat "twcMOduleEnabled was Nil"};
 
 waitUntil{missionNameSpace getVariable "twcModuleFinished"};
 

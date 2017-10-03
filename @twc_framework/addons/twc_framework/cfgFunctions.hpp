@@ -29,6 +29,7 @@ class CfgFunctions {
 			class stationaryUnits{};
 			class UpdateTask{};
 			class virtualMortar{};
+			class toggleSpectator {};
 		};
 		
 		class Modules {
