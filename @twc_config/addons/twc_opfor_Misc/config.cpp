@@ -142,6 +142,22 @@ class CfgFactionClasses
 		priority=2;
 		side=3;
 	};
+	class TWC_Afr_Pirates
+	{
+		displayName="Pirates (African)";
+		author="The Wrecking Crew";
+		icon="twc_opfor_Misc\data\Jolly_Roger.paa";
+		priority=2;
+		side=2;
+	};
+	class TWC_Asn_Pirates
+	{
+		displayName="Pirates (Asian)";
+		author="The Wrecking Crew";
+		icon="twc_opfor_Misc\data\chinese_pirates.paa";
+		priority=2;
+		side=2;
+	};
 };
 class CfgVehicles
 {
@@ -190,7 +206,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class rhs_medic_bag;
+	/* class rhs_medic_bag;
 	class USSR_big_medic_bag: rhs_medic_bag
 	{
 		scope = 1;
@@ -293,21 +309,24 @@ class CfgVehicles
 				count=4;
 			};
 		};
-	};
+	}; */
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
+	class I_G_Soldier_base_F;
 	
 	#include "russianfederation.hpp"
 	#include "iraq.hpp"
 	#include "african.hpp"
 	#include "irish.hpp"
 	
-	#include "USSRAfghan.hpp"
+	//#include "USSRAfghan.hpp"
 	
 	#include "takistan.hpp"
 	
 	#include "usa_1970.hpp"
+	
+	#include "pirates.hpp"
 };
 class CFgMarkers 
 {

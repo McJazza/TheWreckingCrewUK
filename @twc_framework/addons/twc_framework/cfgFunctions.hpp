@@ -14,7 +14,6 @@ class CfgFunctions {
 			class daisyCutter{};
 			class Defend {};
 			class Flagchange {};
-			class IEDpopulate{};
 			class intelHint{};
 			class LightsSwitch{};
 			class Patrol {};
