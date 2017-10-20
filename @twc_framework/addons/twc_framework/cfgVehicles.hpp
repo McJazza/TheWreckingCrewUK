@@ -1,10 +1,7 @@
-class cfgVehicles
-{
+class cfgVehicles {
 	class Logic;
-	class Module_F: Logic
-	{
-		class AttributesBase
-		{
+	class Module_F: Logic {
+		class AttributesBase {
 			class Default;
 			class Edit;
 			class Combo;
@@ -13,13 +10,18 @@ class cfgVehicles
 			class ModuleDescription;
 			class Units;
 		};
-		class ModuleDescription
-		{
+
+		class ModuleDescription {
 			class Player;
 		};
 	};
-	class twc_ModuleMission: Module_F
-	{
+	
+	class All;
+	class All: All {
+		init = "if (!isServer) exitWith{}; [(_this select 0)] call TWC_fnc_addObjectCurators";
+	};
+	
+	class twc_ModuleMission: Module_F {
 		author="[TWC] jayman";
 		scope=2;
 		displayName="TWC Mission Module";
@@ -29,103 +31,101 @@ class cfgVehicles
 		isGlobal=0;
 		isTriggerActivated=0;
 		isDisposable=0;
-		class Arguments
-		{
-			class enabled
-			{
+		
+		class Arguments {
+			class enabled {
 				displayName="Enabled";
 				description="Enable if this is a TWC Operation";
 				typeName="BOOL";
 				defaultValue=1;
 			};
-			class era
-			{
+
+			class era {
 				displayName="ERA";
 				description="Select the ERA";
 				typeName="STRING";
 				defaultValue="modern";
-				class values
-				{
-					class modern
-					{
+				
+				class values {
+					class modern {
 						name="Modern";
 						value="modern";
 					};
-					class coldwar
-					{
+
+					class coldwar {
 						name="Coldwar";
 						value="coldwar";
 					};
-					class 1990
-					{
+
+					class 1990 {
 						name="1990s";
 						value="1990";
 					};
-					class ww2
-					{
+
+					class ww2 {
 						name="WW2";
 						value="ww2";
 					};
 				};
 			};
-			class boatSafety
-			{
+
+			class boatSafety {
 				displayName="Added Protection From Boats";
 				description="Enable to keep players from being squished by rhibs.";
 				typeName="BOOL";
 				defaultValue=0;
 			};
-			class civilianEquipment
-			{
+
+			class civilianEquipment {
 				displayName="Civilian Equipment";
 				description="Enable to remove goggles and backpacks from civilians";
 				typeName="BOOL";
 				defaultValue=1;
 			};
-			class deadBodies
-			{
+
+			class deadBodies {
 				displayName="Player Base Body Cleanup";
 				description="Range. Set to 0 to Disable";
 				typeName="NUMBER";
 				defaultValue=250;
 			};
-			class disconectGear
-			{
+
+			class disconectGear {
 				displayName="Disconect Gear";
 				description="Removes gear from the previous body when they disconect";
 				typeName="BOOL";
 				defaultValue=1;
 			};
-			class nightGear
-			{
+
+			class nightGear {
 				displayName="Nighttime Equipment";
 				description="Enable to give NVGs, Flares, and chemlights to units";
 				typeName="BOOL";
 				defaultValue=0;
 			};
-			class rollSleeves
-			{
+
+			class rollSleeves {
 				displayName="Roll Sleeves";
 				description="Enable to allow Rolling Sleeves";
 				typeName="BOOL";
 				defaultValue=0;
 			};
-			class run
-			{
+
+			class run {
 				displayName="Running in Base";
 				description="Set base no run zone. 0 = Run anywhere";
 				typeName="NUMBER";
 				defaultValue=0;
 			};
-			class safeZone
-			{
+
+			class safeZone {
 				displayName="Shooting in Base";
 				description="Set number to set size of base no-fire zone. 0 = no safezone";
 				typeName="NUMBER";
 				defaultValue=400;
 			};
-			class zuesObjects
-			{
+
+			class zuesObjects {
 				displayName="Zeus Objects";
 				description="Enable to give zeus access to all objects";
 				typeName="BOOL";
@@ -133,8 +133,8 @@ class cfgVehicles
 			};
 		};
 	};
-	class twc_moduelHC: Module_F
-	{
+
+	class twc_moduelHC: Module_F {
 		author="[TWC] jayman";
 		scope=2;
 		displayName="TWC Headless Client Module";
@@ -144,24 +144,22 @@ class cfgVehicles
 		isGlobal=0;
 		isTriggerActivated=0;
 		isDisposable=0;
-		class Arguments
-		{
-			class enabled
-			{
+		class Arguments {
+			class enabled {
 				displayName="Enabled";
 				description="Enable for Headless Clients";
 				typeName="BOOL";
 				defaultValue=1;
 			};
-			class delay
-			{
+			
+			class delay {
 				displayName="Delay";
 				description="Adds a delay before HC begin. 120 is usually optimal.";
 				typeName="NUMBER";
 				defaultValue=120;
 			};
-			class endMission
-			{
+
+			class endMission {
 				displayName="End Mission";
 				description="Ends Mission when all Players Disconnect";
 				typeName="BOOL";
@@ -169,8 +167,8 @@ class cfgVehicles
 			};
 		};
 	};
-	class twc_moduelCache: Module_F
-	{
+
+	class twc_moduelCache: Module_F {
 		author="[TWC] jayman";
 		scope=2;
 		displayName="TWC Cache Module";
@@ -180,24 +178,22 @@ class cfgVehicles
 		isGlobal=0;
 		isTriggerActivated=0;
 		isDisposable=0;
-		class Arguments
-		{
-			class enabled
-			{
+		class Arguments {
+			class enabled {
 				displayName="Enabled";
 				description="Enable for Unit Caching";
 				typeName="BOOL";
 				defaultValue=1;
 			};
-			class aiRange
-			{
+
+			class aiRange {
 				displayName="AI Range";
 				description="Range at which AI will Cache 0 to Disable";
 				typeName="NUMBER";
 				defaultValue=1500;
 			};
-			class vehicleRange
-			{
+
+			class vehicleRange {
 				displayName="Vehicle Caching";
 				description="Range at which vehicles will Cache 0 to Disable";
 				typeName="NUMBER";
@@ -205,8 +201,8 @@ class cfgVehicles
 			};
 		};
 	};
-	class twc_moduleHealPlayer: Module_F
-	{
+
+	class twc_moduleHealPlayer: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -218,8 +214,8 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Heal Player";
 	};
-	class twc_moduleKillPlayer: Module_F
-	{
+
+	class twc_moduleKillPlayer: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -231,8 +227,8 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Kill Player";
 	};
-	class twc_modulesetSpectator: Module_F
-	{
+
+	class twc_modulesetSpectator: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -244,8 +240,8 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Toggle Unit ACRE Spectator";
 	};
-	class twc_moduleMedicalInfo: Module_F
-	{
+
+	class twc_moduleMedicalInfo: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -257,134 +253,4 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Hint Unit Medical Info";
 	};
-/*
-	class Man;
-	class CAManBase: Man
-	{
-		class ACE_SelfActions
-		{
-			class Medical
-			{
-				class ACE_ArmLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_ArmRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-			};
-		};
-		class ACE_Actions
-		{
-			class Medical
-			{
-				class ACE_ArmLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_ArmRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-			};
-		};
-	};
-*/
 };

@@ -76,6 +76,7 @@ class CfgFunctions {
 			
 			class addAddonsCurator {};
 			class addObjectsCurator {};
+			class addObjectCurators {};
 			class addCurator {};
 			class curatorInit {};
 		};

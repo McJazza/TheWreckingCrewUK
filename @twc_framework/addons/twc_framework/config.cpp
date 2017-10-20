@@ -28,7 +28,7 @@ class CfgPatches {
 class cfgFactionClasses {
 	class NO_CATEGORY;
 	class twc_missionSetup: NO_CATEGORY {
-		displayName="TWC Mission Module";
+		displayName = "TWC Mission Module";
 	};
 	
 	class twc_zeus: NO_CATEGORY {
@@ -50,7 +50,7 @@ class Extended_InitPost_EventHandlers {
 	};
 };
 
+#include "cfgFunctions.hpp"
 #include "cfgWeapons.hpp"
 #include "cfgVehicles.hpp"
-#include "cfgFunctions.hpp"
 #include "cfgMusic.hpp"
