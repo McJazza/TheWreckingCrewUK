@@ -66,13 +66,43 @@ class cfgWeapons
 		_generalMacro="Launch_NLAW_F";
 		scope=2;
 		displayname="Field Tent";
-		model = "\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_Static\Static_Tripod_Bag_equipped.p3d";
+		model = "\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_Static\uk3cb_static_tripod_bag_equipped.p3d";
 		picture = "\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_Static\data\gear_L16_tripod_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
 		handAnim[]={};
 		class weaponSlotsInfo: WeaponsSlotsInfo
 		{
 			mass=220;
+		};
+	};
+	class UK3CB_BAF_L115A3;
+	class UK3CB_BAF_L115A3_DE;
+	class twc_l96_w: UK3CB_BAF_L115A3
+	{
+		scope = 1;
+		displayname = "L96A1";
+		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="CUP_optic_Leupold_VX3";
+			};
+		};
+	};
+	class twc_l96_d: UK3CB_BAF_L115A3_DE
+	{
+		scope = 1;
+		displayname = "L96A1";
+		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="CUP_optic_Leupold_VX3";
+			};
 		};
 	};
 };

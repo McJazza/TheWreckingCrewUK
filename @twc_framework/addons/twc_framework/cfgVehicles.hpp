@@ -192,14 +192,14 @@ class cfgVehicles
 			class aiRange
 			{
 				displayName="AI Range";
-				description="Range at which AI will Cache";
+				description="Range at which AI will Cache 0 to Disable";
 				typeName="NUMBER";
 				defaultValue=1500;
 			};
 			class vehicleRange
 			{
 				displayName="Vehicle Caching";
-				description="Range at which vehicles will Cache";
+				description="Range at which vehicles will Cache 0 to Disable";
 				typeName="NUMBER";
 				defaultValue=2000;
 			};
@@ -242,7 +242,7 @@ class cfgVehicles
 		isTriggerActivated=0;
 		function="twc_fnc_setSpectator";
 		curatorCanAttach = 1;
-		displayName = "Join / Leave Spectator Voice";
+		displayName = "Toggle Unit ACRE Spectator";
 	};
 	class twc_moduleMedicalInfo: Module_F
 	{
@@ -255,7 +255,7 @@ class cfgVehicles
 		isTriggerActivated=0;
 		function="twc_fnc_medicalInfo";
 		curatorCanAttach = 1;
-		displayName = "Hint a units medical Info";
+		displayName = "Hint Unit Medical Info";
 	};
 /*
 	class Man;

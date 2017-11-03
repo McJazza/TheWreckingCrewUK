@@ -10,13 +10,13 @@ class CfgFunctions
 			class AttackHelicopter{};
 			class AttackPlane {};
 			class BattlefieldSounds {};
+			class briefingLoadout {};
 			class CommandMessage{};
 			class createMarker{};
 			class CreateTask{};
 			class daisyCutter{};
 			class Defend {};
 			class Flagchange {};
-			class IEDpopulate{};
 			class intelHint{};
 			class LightsSwitch{};
 			class Patrol {};
@@ -31,6 +31,7 @@ class CfgFunctions
 			class stationaryUnits{};
 			class UpdateTask{};
 			class virtualMortar{};
+			class toggleSpectator {};
 		};
 		class Modules
 		{

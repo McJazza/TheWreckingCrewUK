@@ -1,3 +1,5 @@
+1. In the mission, go to addon settings and define the ACRE - Operations room for channel switching & force it.
+
 2. In description.ext insert Operation and Creator Name.
 
 3. If not done already, place down a base marker named base.
@@ -20,7 +22,7 @@
 	6.1 One with owner #adminLogged.
 	6.2 One with owner 76561198070630639 (Jayman).
 	6.2 One with owner 76561198050180681 (Saxon).
-	6.3 One with owner 76561198103286410 (Adam).
+	6.3 One with owner 76561198030665694 (Hobbs).
 	6.2 One with owner 76561198005456546 (Bosenator).
 
 7. Set up the Headless Client:
