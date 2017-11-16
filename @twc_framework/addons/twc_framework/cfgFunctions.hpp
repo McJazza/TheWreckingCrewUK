@@ -25,6 +25,7 @@ class CfgFunctions {
 			class Retreat{};
 			class spawnGroup{};
 			class spawnIed{};
+			class setUniform{};
 			class stationaryUnits{};
 			class UpdateTask{};
 			class virtualMortar{};

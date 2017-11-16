@@ -33,6 +33,8 @@ class cfgFunctions
 };
 class CfgVehicles
 {
+	class rhsusf_m1085a1p2_B_WD_Medical_fmtv_usarmy;
+	
 	class Land_CampingTable_F;
 	class Land_Portable_generator_F;
 	
@@ -41,6 +43,16 @@ class CfgVehicles
 	class Land_BagFence_Short_F;
 	class Land_BagFence_End_F;
 	class Land_BagFence_Round_F;
+	class Land_BagBunker_Small_F;
+	
+	class twc_medical_hemtt: rhsusf_m1085a1p2_B_WD_Medical_fmtv_usarmy
+	{
+		ace_cargo_hasCargo = -1;
+		class EventHandlers: EventHandlers
+		{
+			init = "(_this select 0) setVariable [""ace_medical_isMedicalFacility"",true,true];";
+		};
+	};
 	
 	class twc_Land_BagFence_Corner_F: Land_BagFence_Corner_F
 	{
@@ -77,6 +89,13 @@ class CfgVehicles
 			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";  
 		};
 	};
+	class twc_Land_BagBunker_Small_F: Land_BagBunker_Small_F
+	{
+		class EventHandlers: EventHandlers
+		{
+			init = "[(_this select 0),true,[0,0,0],180] call ace_dragging_fnc_setCarryable;";  
+		};
+	};
 	class twc_radioTable:Land_CampingTable_F
 	{
 		displayname = "TWC RadioTable";
@@ -98,13 +117,13 @@ class CfgVehicles
 				class twc_placeRadio{
 					displayName = "Activate Forward Base";
 					condition = "!(_target getVariable 'twc_forwardBaseDeployed')";
-					statement = "_return = [_target] call twc_fnc_setUpForwardBase; hint _return;";
+					statement = "_return = [_target,_player] call twc_fnc_setUpForwardBase; hint _return;";
                     icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 				class twc_RemoveRadio{
 					displayName = "Tear Down Forward Base";
 					condition = "(_target getVariable 'twc_forwardBaseDeployed')";
-					statement = "_return = [_target] call twc_fnc_tearDownForwardBase; hint _return;";
+					statement = "_return = [_target,_player] call twc_fnc_tearDownForwardBase; hint _return;";
                     icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 			};

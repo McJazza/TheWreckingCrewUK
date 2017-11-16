@@ -40,7 +40,97 @@ class CfgPatches
 			"IRA_Autorifleman",
 			"usa_1970_medic",
 			"usa_1970_leader",
-			"usa_1970_grenadier"
+			"usa_1970_grenadier",
+			"Afr_Pirate_Skipper",
+			"Afr_Pirate_Captain",
+			"Afr_Pirate_AK",
+			"Afr_Pirate_AKM",
+			"Afr_Pirate_AKS",
+			"Afr_Pirate_RPG",
+			"Afr_Pirate_AK74",
+			"Afr_Pirate_AKS74",
+			"Afr_Pirate_AK74GP25",
+			"Afr_Pirate_FAL",
+			"Afr_Pirate_M14",
+			"Afr_Pirate_SMLE",
+			"Afr_Pirate_AR_RPD",
+			"Afr_Pirate_AR_RPK",
+			"Afr_Pirate_MG_M60",
+			"Afr_Pirate_MG_PKM",
+			"Afr_Pirate_MM_SVD",
+			"Asn_Pirate_Skipper",
+			"Asn_Pirate_Captain",
+			"Asn_Pirate_AK",
+			"Asn_Pirate_AKM",
+			"Asn_Pirate_AKS",
+			"Asn_Pirate_RPG",
+			"Asn_Pirate_AK74",
+			"Asn_Pirate_AKS74",
+			"Asn_Pirate_AK74GP25",
+			"Asn_Pirate_FAL",
+			"Asn_Pirate_M14",
+			"Asn_Pirate_SMLE",
+			"Asn_Pirate_AR_RPD",
+			"Asn_Pirate_AR_RPK",
+			"Asn_Pirate_MG_M60",
+			"Asn_Pirate_MG_PKM",
+			"Afr_Pirate_MM_SVD",
+			"TWC_WaPArmy_Taviana_Base",
+			"TWC_WaPArmy_Taviana_Squadleader",
+			"TWC_WaPArmy_Taviana_Grenadier",
+			"TWC_WaPArmy_Taviana_Grenadier_Ass",
+			"TWC_WaPArmy_Taviana_AutoRifleman",
+			"TWC_WaPArmy_Taviana_MG",
+			"TWC_WaPArmy_Taviana_Sniper",
+			"TWC_WaPArmy_Taviana_AAGunner",
+			"TWC_WaPArmy_Taviana_AAAssistant",
+			"TWC_WaPArmy_Taviana_ATGunner",
+			"TWC_WaPArmy_Taviana_ATAssistant",
+			"TWC_WaPArmy_Taviana_Crewman_Camo",
+			"TWC_WaPArmy_Taviana_Crewman_Black",
+			"TWC_WaPArmy_Taviana_Driver",
+			"TWC_WaPArmy_Taviana_HPilot",
+			"TWC_WaPArmy_Taviana_JPilot",
+			"TWC_WaPArmy_Taviana_Squadleader_Winter",
+			"TWC_WaPArmy_Taviana_Grenadier_Winter",
+			"TWC_WaPArmy_Taviana_Grenadier_Ass_Winter",
+			"TWC_WaPArmy_Taviana_AutoRifleman_Winter",
+			"TWC_WaPArmy_Taviana_MG_Winter",
+			"TWC_WaPArmy_Taviana_Sniper_Winter",
+			"TWC_WaPArmy_Taviana_AAGunner_Winter",
+			"TWC_WaPArmy_Taviana_AAAssistant_Winter",
+			"TWC_WaPArmy_Taviana_ATGunner_Winter",
+			"TWC_WaPArmy_Taviana_ATAssistant_Winter",
+			"TWC_WaPArmy_Taviana_Crewman_Camo_Winter",
+			"TWC_WaPArmy_Taviana_Driver_Winter",
+			"TWC_WaPArmy_Taviana_UAZ_Unarmed",
+			"TWC_WaPArmy_Taviana_UAZ_Open",
+			"TWC_WaPArmy_Taviana_UAZ_MG",
+			"TWC_WaPArmy_Taviana_UAZ_AGS30",
+			"TWC_WaPArmy_Taviana_UAZ_SPG9",
+			"TWC_WaPArmy_Taviana_UAZ_METIS",
+			"TWC_WaPArmy_Taviana_Ural",
+			"TWC_WaPArmy_Taviana_Ural_Open",
+			"TWC_WaPArmy_Taviana_Ural_Repair",
+			"TWC_WaPArmy_Taviana_Ural_Reammo",
+			"TWC_WaPArmy_Taviana_Ural_Empty",
+			"TWC_WaPArmy_Taviana_Ural_ZU23",
+			"TWC_WaPArmy_Taviana_BM21",
+			"TWC_WaPArmy_Taviana_BMP1",
+			"TWC_WaPArmy_Taviana_BMP2",
+			"TWC_WaPArmy_Taviana_BMP2_HQ",
+			"TWC_WaPArmy_Taviana_BMP2_Amb",
+			"TWC_WaPArmy_Taviana_BMP2_ZU23",
+			"TWC_WaPArmy_Taviana_BRDM",
+			"TWC_WaPArmy_Taviana_BRDM_ATGM",
+			"TWC_WaPArmy_Taviana_BRDM_HQ",
+			"TWC_WaPArmy_Taviana_BTR40",
+			"TWC_WaPArmy_Taviana_BTR40MG",
+			"TWC_WaPArmy_Taviana_BTR60",
+			"TWC_WaPArmy_Taviana_T55",
+			"TWC_WaPArmy_Taviana_T72",
+			"TWC_WaPArmy_Taviana_T72A",
+			"TWC_WaPArmy_Taviana_ZSU23"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -80,6 +170,10 @@ class CfgEditorSubCategories
 	class TWC_usa_1970
 	{
 		displayName = "USA (1970)";
+	};
+	class TWC_WaPArmy_Taviana_Men_Winter
+	{
+		displayName = "Men (Winter)";
 	};
 };
 class CfgFactionClasses
@@ -158,11 +252,36 @@ class CfgFactionClasses
 		priority=2;
 		side=2;
 	};
+	class TWC_Afr_Pirates_RF
+	{
+		displayName="Pirates (African)";
+		author="The Wrecking Crew";
+		icon="twc_opfor_Misc\data\Jolly_Roger.paa";
+		priority=2;
+		side=0;
+	};
+	class TWC_Asn_Pirates_RF
+	{
+		displayName="Pirates (Asian)";
+		author="The Wrecking Crew";
+		icon="twc_opfor_Misc\data\chinese_pirates.paa";
+		priority=2;
+		side=0;
+	};
+	class TWC_WaPArmy_Taviana
+	{
+		displayName="Workers and Peasants Army of Taviana";
+		author="Saxon";
+		priority=2;
+		side=0;
+	};
 };
 class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;
 	class CUP_B_RPGPack_Khaki;
+	class CUP_B_HikingPack_Civ;
+	
 	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
 	{
 		class TransportMagazines
@@ -285,7 +404,7 @@ class CfgVehicles
 		{
 			class _xx_RPG7
 			{
-				magazine="rhs_rpg7_PG7V_mag";
+				magazine="CUP_PG7V_M";
 				count=3;
 			};
 		};
@@ -314,6 +433,55 @@ class CfgVehicles
 		};
 	};
 */
+	class WaPAT_Backpack_RPK: CUP_B_HikingPack_Civ
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_RPK
+			{
+				magazine="CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+				count=3;
+			};
+		};
+	};
+	class WaPAT_Backpack_UK59: CUP_B_HikingPack_Civ
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_UK59
+			{
+				magazine="CUP_50Rnd_UK59_762x54R_Tracer";
+				count=4;
+			};
+		};
+	};
+	class WaPAT_Backpack_AA: CUP_B_HikingPack_Civ
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_RPKMag
+			{
+				magazine = "CUP_launch_9K32Strela";
+				count = 2;
+			};
+		};
+	};
+	class WaPAT_Backpack_AT: CUP_B_HikingPack_Civ
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_RPKMag
+			{
+				magazine = "CUP_AT13_M";
+				count = 2;
+			};
+		};
+	};
+	
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
@@ -331,6 +499,8 @@ class CfgVehicles
 	#include "usa_1970.hpp"
 	
 	#include "pirates.hpp"
+	
+	#include "WaPArmy_Taviana.hpp"
 };
 class CFgMarkers 
 {

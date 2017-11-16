@@ -71,8 +71,8 @@
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet"		
-		};		
+			"ACE_tourniquet"
+		};
 	};
 	class ColdWar_Rifleman: ColdWar_Base
 	{
@@ -83,7 +83,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L1A1_Wood",
-			"ukcw_L1A1_law"		
+			"ukcw_L1A1_law"
 		};
 		respawnweapons[]=
 		{
@@ -303,21 +303,25 @@
 		};
 		linkedItems[]=
 		{
-			"Binocular",		
+			"Binocular",
 			"ukcw_1958_webbing",
 			"ukcw_helmet_mk3",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
-			"Binocular",		
+			"Binocular",
 			"ukcw_1958_webbing",
 			"ukcw_helmet_mk3",
-			"ItemMap",	
+			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{
@@ -477,7 +481,8 @@
 			"UK3CB_BAF_V_Pilot_DPMW",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -485,7 +490,8 @@
 			"UK3CB_BAF_V_Pilot_DPMW",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{
@@ -529,7 +535,8 @@
 			"CUP_V_B_PilotVest",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -537,7 +544,8 @@
 			"CUP_V_B_PilotVest",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{
@@ -620,38 +628,35 @@
 		displayName="Milan Gunner";
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
-		backpack="TWC_Backpack_Cold_War_Milan";
+		backpack="ukcw_milan_gun_bag";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"ukcw_sterling_sub",
-			"TWC_Milan_Tripod_Disassemabled"	
+			"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"ukcw_sterling_sub",
-			"TWC_Milan_Tripod_Disassemabled"
+			"ukcw_sterling_sub"
 		};
 	};
 	class ColdWar_MilanAssistant: ColdWar_MilanGunner
 	{
 		displayName="Milan Assistant";
+		backpack="TWC_Backpack_Cold_War_Milan";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"ukcw_sterling_sub",
-			"TWC_Milan_Launcher_Disassemabled"	
+			"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"ukcw_sterling_sub",
-			"TWC_Milan_Launcher_Disassemabled"
+			"ukcw_sterling_sub"
 		};
 	};
 	class ColdWar_Tank_Commander: ColdWar_Base
@@ -660,7 +665,7 @@
 		displayName="Tank Commander";
 		icon="iconManLeader";
 		uniformClass="UK3CB_BAF_U_CrewmanCoveralls_RTR";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_Cold_War_Tank";
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -671,7 +676,9 @@
 			"UK3CB_BAF_H_Beret_RTR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"Binocular",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -679,18 +686,20 @@
 			"UK3CB_BAF_H_Beret_RTR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"Binocular",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
 			"ukcw_sterling_sub"	
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
 			"ukcw_sterling_sub"
 		};
 		magazines[]=
@@ -728,7 +737,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_C_Police_Holster",
-			"UK3CB_BAF_H_Beret_RTR",
+			"UK3CB_BAF_H_Beret_RTR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -741,29 +750,33 @@
 		linkedItems[]=
 		{
 			"CUP_V_C_Police_Holster",
-			"CUP_H_BAF_Officer_Beret",
+			"UK3CB_BAF_H_Beret_PWRR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"Binocular",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
        		"CUP_V_C_Police_Holster",
-			"CUP_H_BAF_Officer_Beret",
+			"UK3CB_BAF_H_Beret_PWRR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"Binocular",
+			"ACE_Flashlight_MX991"
 		};
 	};
 	class ColdWar_Vehicle_Crewman: ColdWar_Vehicle_Commander
 	{
 		displayName="Vehicle Crew";
 		icon="iconMan";
-		backpack="";
+		backpack="TWC_Backpack_Cold_War_Section";
 		linkedItems[]=
 		{
 			"CUP_V_C_Police_Holster",
-			"CUP_H_BAF_Officer_Beret",
+			"UK3CB_BAF_H_Beret_PWRR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -771,11 +784,219 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_C_Police_Holster",
-			"CUP_H_BAF_Officer_Beret",
+			"UK3CB_BAF_H_Beret_PWRR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
+		};
+	};
+	class ColdWar_Sniper: ColdWar_Base
+	{
+		scope = 2;
+		displayname = "Sniper";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"ukcw_l42"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"ukcw_l42"
+		};
+		Items[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_Tripod"
+		};
+		respawntems[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_Tripod"			
 		};		
+		magazines[]=
+		{
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"SmokeShellGreen"
+		};
+		Respawnmagazines[]=
+		{
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"ukcw_l42_10rnd_mag",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"SmokeShellGreen"
+		};
+	};
+	class ColdWar_Spotter: ColdWar_Sniper
+	{
+		displayname = "Spotter";
+		backpack = "TWC_Backpack_Cold_War_Section";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"Binocular",
+			"twc_L1A1_SUIT"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"Binocular",
+			"twc_L1A1_SUIT"
+		};
+		Items[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_RangeCard",
+			"ACE_Clacker"
+		};
+		respawntems[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_RangeCard",
+			"ACE_Clacker"
+		};		
+		magazines[]=
+		{
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"ClaymoreDirectionalMine_Remote_Mag",
+			"ClaymoreDirectionalMine_Remote_Mag"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"SmokeShellGreen",
+			"ClaymoreDirectionalMine_Remote_Mag",
+			"ClaymoreDirectionalMine_Remote_Mag"
+		};
 	};
 	////////////////////// DISMOUNTED ////////////////////
 	class ColdWar_Rifleman_Dismounted: ColdWar_Rifleman
@@ -985,7 +1206,8 @@
 			"UK3CB_BAF_H_Beret_Rifles",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -994,7 +1216,8 @@
 			"UK3CB_BAF_H_Beret_Rifles",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{

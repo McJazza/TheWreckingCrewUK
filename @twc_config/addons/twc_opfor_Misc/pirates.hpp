@@ -1,3 +1,7 @@
+/////////////////////////////
+///////// GREENFOR //////////
+/////////////////////////////
+
 //////////// Africans//////////
 class Afr_Pirate_Base: I_G_Soldier_base_F
 {
@@ -1138,6 +1142,7 @@ class Asn_Pirate_MG_PKM: Afr_Pirate_MG_PKM
 };
 class Asn_Pirate_MM_SVD: Afr_Pirate_MM_SVD
 {
+
 	faction="TWC_Asn_Pirates";
 	genericNames="ChineseMen";
 	identityTypes[] =
