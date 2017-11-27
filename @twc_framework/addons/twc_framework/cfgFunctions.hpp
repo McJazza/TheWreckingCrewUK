@@ -30,6 +30,8 @@ class CfgFunctions {
 			class UpdateTask{};
 			class virtualMortar{};
 			class toggleSpectator {};
+			
+			class init{};
 		};
 		
 		class Modules {
